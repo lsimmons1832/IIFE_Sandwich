@@ -24,65 +24,65 @@ var veggiesChooser = document.getElementById("veggies");
 meatChooser.addEventListener("click", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-  	Sandwichevent.addMeat(selectedTopping);
+  	sandichMaker.addMeat(selectedTopping);
 }
 	if (event.target.checked === false){
 		selectedTopping = event.target.value;
-		Sandwichevent.removeMeat(selectedTopping);
+		sandichMaker.removeMeat(selectedTopping);
 	}
-	finalSandwichPrice = Sandwichevent.getTotalPrice();
+	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 breadChooser.addEventListener("click", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-    Sandwichevent.addBread(selectedTopping);
+    sandichMaker.addBread(selectedTopping);
 	}
 	if (event.target.checked === false){
 		selectedTopping = event.target.value;
-		Sandwichevent.removeMeat(selectedTopping);
+		sandichMaker.removeMeat(selectedTopping);
 	}
-	finalSandwichPrice = Sandwichevent.getTotalPrice();
+	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 cheeseChooser.addEventListener("click", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-  Sandwichevent.addCheese(selectedTopping);
+  sandichMaker.addCheese(selectedTopping);
 	}
 	if (event.target.checked === false){
 		selectedTopping = event.target.value;
-		Sandwichevent.removeMeat(selectedTopping);
+		sandichMaker.removeMeat(selectedTopping);
 	}
-	finalSandwichPrice = Sandwichevent.getTotalPrice();
+	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 condimentChooser.addEventListener("click", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-  Sandwichevent.addCondiment(selectedTopping);
+  sandichMaker.addCondiment(selectedTopping);
 	}
 	if (event.target.checked === false){
 		selectedTopping = event.target.value;
-		Sandwichevent.removeMeat(selectedTopping);
+		sandichMaker.removeMeat(selectedTopping);
 	}
-	finalSandwichPrice = Sandwichevent.getTotalPrice();
+	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 veggiesChooser.addEventListener("click", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-  Sandwichevent.addVeggies(selectedTopping);
+  sandichMaker.addVeggies(selectedTopping);
 	}
 	if (event.target.checked === false){
 		selectedTopping = event.target.value;
-		Sandwichevent.removeMeat(selectedTopping);
+		sandichMaker.removeMeat(selectedTopping);
 	}
-	finalSandwichPrice = Sandwichevent.getTotalPrice();
+	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
