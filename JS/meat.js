@@ -15,9 +15,9 @@
    };
 
 // Augment the original object with another method
-   maker.addMeat = function(selectedTopping) {
-   	console.log(meatPrices[meat])
-     	return meatPrices[meat];
+   maker.getmeatPrices = function(selectedTopping) {
+   	onsole.log(meatPrices[meat])
+     	return selectedTopping;
    };
 
    maker.removeMeat = function(selectedTopping){
