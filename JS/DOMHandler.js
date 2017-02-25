@@ -1,13 +1,12 @@
-// Variable to hold the final price. Default to 0.
-var finalSandwichPrice = 0;
+var SandwichMaker = (function(){
+	var sandwich = [];
+	var finalSandwichPrice = 0;
+	var selectedTopping;
+	
+})(SandwichMaker || {});
 
-// Variable to hold topping that the user selects
-var selectedTopping;
-
-// Variable to hold final price
+function buildSandwich(){
 var finalPrice = document.getElementById("finalPrice");
-
-// Define button
 var button = document.getElementById("makeMySandwich");
 
 // Get a reference to the <select> element that has all the meat options
@@ -35,21 +34,25 @@ var veggiesChooser = document.getElementById("veggies");
 // 	finalSandwichPrice = SandwichMaker.getTotalPrice();
 //     finalPrice.innerHTML = finalSandwichPrice;
 // });
-
-var SandwichMaker = (function(addDOM){
-breadChooser.addEventListener("click", SandwichMaker) 
-alert("I made it inside bread");
-  // Get the value chosen from the DOM
-  selectedTopping = event.breadChooser;
-    SandwichMaker.maker(selectedTopping);
-	
-	if (event.target.checked === false){
-		selectedTopping = event.breadChooser.value;
-		SandwichMaker.removeBread(selectedTopping);
+for (var i = 0; i < document.getElementById('bread').length; i++) {
+	if(document.getElementById('bread')[i].checked){
+		SandwichMaker.getBreadPrice.push(bread)=sandwich[i];
 	}
-	finalSandwichPrice = SandwichMaker.getTotalPrice();
-    finalPrice.innerHTML = finalSandwichPrice;
-});
+}
+console.log("My sandwich: ",sandwich[i]);
+// breadChooser.addEventListener("click", SandwichMaker) 
+// alert("I made it inside bread");
+//   // Get the value chosen from the DOM
+//   selectedTopping = event.breadChooser.value;
+//     sandwich = SandwichMaker.getBreadPrice(bread).push;
+	
+// 	// if (event.target.checked === false){
+// 	// 	selectedTopping = event.breadChooser.value;
+// 	// 	SandwichMaker.removeBread(selectedTopping);
+// 	// }
+// 	finalSandwichPrice = SandwichMaker.getTotalPrice();
+//     finalPrice.innerHTML = finalSandwichPrice;
+
 
 // var SandwichMaker = (function(addDOM){
 // cheeseChooser.addEventListener("click", SandwichMaker) 
@@ -95,5 +98,5 @@ alert("I made it inside bread");
 // 	finalSandwichPrice = SandwichMaker.getTotalPrice();
 //     finalPrice.innerHTML = finalSandwichPrice;
 // });
-
-button.addEventListener("click", SandwichMaker);
+}
+document.getElementById("makeMySandwich").addEventListener("click", buildSandwich);

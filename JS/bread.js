@@ -30,16 +30,14 @@ var SandwichMaker = (function (oldSandwichMaker) {
 	};
 
 	
-	return {
-		oldSandwichMaker.getbread: function(){
+		oldSandwichMaker.getbread = function(){
 				return breadPrice;
 		},
 	
-	oldSandwichMaker.getBreadPrice: function(bread){
+	oldSandwichMaker.getBreadPrice = function(bread){
 		return breadPrice[bread];
 	}
 
-};
 
 	return oldSandwichMaker;
 })(SandwichMaker.getBreadPrice || {});
