@@ -14,7 +14,7 @@ var button = document.getElementById("makeMySandwich");
 var meatChooser = document.getElementById("meat");
 var breadChooser = document.getElementById("bread");
 var cheeseChooser = document.getElementById("cheese");
-var condimentChooser = document.getElementById("condiment");
+var condimentChooser = document.getElementById("condiments");
 var veggiesChooser = document.getElementById("veggies");
 
 /* 
@@ -22,73 +22,78 @@ var veggiesChooser = document.getElementById("veggies");
   and get the value of the topping from your augmented IIFE
 */
 var sandwichMaker = (function(addDOM){
-meatChooser.addEventListener("click", sandichMaker) 
+meatChooser.addEventListener("click", sandwichMaker) 
+alert("I made it inside meat");
   // Get the value chosen from the DOM
   selectedTopping = event.meatChooser.value;
-  	sandichMaker.addMeat(selectedTopping);
+  	sandwichMaker.addMeat(selectedTopping);
 
 	if (event.target.checked === false){
 		selectedTopping = event.meatChooser.value;
-		sandichMaker.removeMeat(selectedTopping);
+		sandwichMaker.removeMeat(selectedTopping);
 	}
-	finalSandwichPrice = sandichMaker.getTotalPrice();
+	finalSandwichPrice = sandwichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 var sandwichMaker = (function(addDOM){
-breadChooser.addEventListener("click", sandichMaker) 
+breadChooser.addEventListener("click", sandwichMaker) 
+alert("I made it inside bread");
   // Get the value chosen from the DOM
   selectedTopping = event.breadChooser.value;
-    sandichMaker.addBread(selectedTopping);
+    sandwichMaker.addBread(selectedTopping);
 	
 	if (event.target.checked === false){
 		selectedTopping = event.breadChooser.value;
-		sandichMaker.removeBread(selectedTopping);
+		sandwichMaker.removeBread(selectedTopping);
 	}
-	finalSandwichPrice = sandichMaker.getTotalPrice();
+	finalSandwichPrice = sandwichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 var sandwichMaker = (function(addDOM){
-cheeseChooser.addEventListener("click", sandichMaker) 
+cheeseChooser.addEventListener("click", sandwichMaker) 
+alert("I made it inside cheese");
   // Get the value chosen from the DOM
   selectedTopping = event.cheeseChooser.value;
-  sandichMaker.addCheese(selectedTopping);
+  sandwichMaker.addCheese(selectedTopping);
 
 	if (event.target.checked === false){
 		selectedTopping = event.cheeseChooser.value;
-		sandichMaker.removeCheese(selectedTopping);
+		sandwichMaker.removeCheese(selectedTopping);
 	}
-	finalSandwichPrice = sandichMaker.getTotalPrice();
+	finalSandwichPrice = sandwichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 var sandwichMaker = (function(addDOM){
-condimentChooser.addEventListener("click", sandichMaker) 
+condimentChooser.addEventListener("click", sandwichMaker) 
+alert("I made it inside condiments");
   // Get the value chosen from the DOM
   selectedTopping = event.condimentChooser.value;
-  sandichMaker.addCondiment(selectedTopping);
+  sandwichMaker.addCondiment(selectedTopping);
 
 	if (event.target.checked === false){
 		selectedTopping = event.condimentChooser.value;
-		sandichMaker.removeCondiments(selectedTopping);
+		sandwichMaker.removeCondiments(selectedTopping);
 	}
-	finalSandwichPrice = sandichMaker.getTotalPrice();
+	finalSandwichPrice = sandwichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
 var sandwichMaker = (function(addDOM){
-veggiesChooser.addEventListener("click", sandichMaker) 
+veggiesChooser.addEventListener("click", sandwichMaker) 
+alert("I made it inside veggies");
   // Get the value chosen from the DOM
   selectedTopping = event.veggiesChooser.value;
-  sandichMaker.addVeggies(selectedTopping);
+  sandwichMaker.addVeggies(selectedTopping);
 	
 	if (event.target.checked === false){
 		selectedTopping = event.veggiesChooser.value;
-		sandichMaker.removeVeggies(selectedTopping);
+		sandwichMaker.removeVeggies(selectedTopping);
 	}
-	finalSandwichPrice = sandichMaker.getTotalPrice();
+	finalSandwichPrice = sandwichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
 
-button.addEventListener("click", addDOM);
+button.addEventListener("click", sandwichMaker);
