@@ -1,27 +1,20 @@
-var SandwichMaker = (function (chooseBread) {
-	var breadSelection = document.getElementById('bread');
-	var breadPrice = [
-	{name: "rye", price: 2.50},	{name: "sourdough", price: 3.00},
-	{name: "pita", price: 3.50},{name: "sevengrain", price: 4.00},
-	{name: "italian", price: 4.50}
-	]
+var SandwichMaker = (function (maker) {
+	
+	//Private array to store bread prices
+	var breadPrices = {
+		rye: 1.00,
+		sourdough: 1.50,
+		pita: 2.00,
+		sevengrain: 2.50,
+		italian: 3.00
+	};
 
-	var cost = 0;
+	maker.addBread = function(bread){
+		console.log(breadPrices[bread])
+			return breadPrices[bread];
+		};
+	
+	return maker;
+})(SandwichMaker);
 
-	return {
-		getbreadPrice: function(){
-			for (var i = 0; i < breadPrice.name; i++) {
-				//breadPrice[i]
-				return breadPrice.price;
-			}
-	},
-	setbreadPrice: function(value){
-		breadPrice = cost;
-	}
-
-};
-
-	return value;
-})(SandwichMaker.getbreadPrice || {});
-
-console.log(SandwichMaker.value);
+//console.log(SandwichMaker.value);
