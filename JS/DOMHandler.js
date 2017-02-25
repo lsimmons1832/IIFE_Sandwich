@@ -26,10 +26,10 @@ meatChooser.addEventListener("click", function(event) {
   selectedTopping = event.target.value;
   	sandichMaker.addMeat(selectedTopping);
 }
-	if (event.target.checked === false){
-		selectedTopping = event.target.value;
-		sandichMaker.removeMeat(selectedTopping);
-	}
+	// if (event.target.checked === false){
+	// 	selectedTopping = event.target.value;
+	// 	sandichMaker.removeMeat(selectedTopping);
+	// }
 	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
@@ -39,10 +39,10 @@ breadChooser.addEventListener("click", function(event) {
   selectedTopping = event.target.value;
     sandichMaker.addBread(selectedTopping);
 	}
-	if (event.target.checked === false){
-		selectedTopping = event.target.value;
-		sandichMaker.removeMeat(selectedTopping);
-	}
+	// if (event.target.checked === false){
+	// 	selectedTopping = event.target.value;
+	// 	sandichMaker.removeMeat(selectedTopping);
+	// }
 	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
@@ -52,10 +52,10 @@ cheeseChooser.addEventListener("click", function(event) {
   selectedTopping = event.target.value;
   sandichMaker.addCheese(selectedTopping);
 	}
-	if (event.target.checked === false){
-		selectedTopping = event.target.value;
-		sandichMaker.removeMeat(selectedTopping);
-	}
+	// if (event.target.checked === false){
+	// 	selectedTopping = event.target.value;
+	// 	sandichMaker.removeMeat(selectedTopping);
+	// }
 	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
@@ -65,10 +65,10 @@ condimentChooser.addEventListener("click", function(event) {
   selectedTopping = event.target.value;
   sandichMaker.addCondiment(selectedTopping);
 	}
-	if (event.target.checked === false){
-		selectedTopping = event.target.value;
-		sandichMaker.removeMeat(selectedTopping);
-	}
+	// if (event.target.checked === false){
+	// 	selectedTopping = event.target.value;
+	// 	sandichMaker.removeMeat(selectedTopping);
+	// }
 	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });
@@ -78,10 +78,10 @@ veggiesChooser.addEventListener("click", function(event) {
   selectedTopping = event.target.value;
   sandichMaker.addVeggies(selectedTopping);
 	}
-	if (event.target.checked === false){
-		selectedTopping = event.target.value;
-		sandichMaker.removeMeat(selectedTopping);
-	}
+	// if (event.target.checked === false){
+	// 	selectedTopping = event.target.value;
+	// 	sandichMaker.removeMeat(selectedTopping);
+	// }
 	finalSandwichPrice = sandichMaker.getTotalPrice();
     finalPrice.innerHTML = finalSandwichPrice;
 });

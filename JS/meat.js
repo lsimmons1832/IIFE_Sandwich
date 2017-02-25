@@ -15,10 +15,14 @@
    };
 
 // Augment the original object with another method
-   maker.addMeat = function() {
-   		console.log(meatPrices[meat])
+   maker.addMeat = function(selectedTopping) {
+   	console.log(meatPrices[meat])
      	return meatPrices[meat];
    };
+
+   maker.removeMeat = function(selectedTopping){
+      console.log()
+   }
 
    // Return the new, augmented object with the new method on it
    return maker;
