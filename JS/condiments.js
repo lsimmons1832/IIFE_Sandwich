@@ -13,7 +13,7 @@
    };
 
 // Augment the original object with another method
-   maker.addVeggies = function() {
+   maker.addCondiments = function() {
    		console.log(condimentsPrices[condiments])
      	return condimentsPrices[condiments];
    };
