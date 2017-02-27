@@ -1,0 +1,38 @@
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+#finalPrice {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Georgia;
+}
+
+.btn {
+  background: #646a6e;
+  background-image: -webkit-linear-gradient(top, #646a6e, #c7d7e0);
+  background-image: -moz-linear-gradient(top, #646a6e, #c7d7e0);
+  background-image: -ms-linear-gradient(top, #646a6e, #c7d7e0);
+  background-image: -o-linear-gradient(top, #646a6e, #c7d7e0);
+  background-image: linear-gradient(to bottom, #646a6e, #c7d7e0);
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #5d5966;
+  background-image: -webkit-linear-gradient(top, #5d5966, #b1a6bf);
+  background-image: -moz-linear-gradient(top, #5d5966, #b1a6bf);
+  background-image: -ms-linear-gradient(top, #5d5966, #b1a6bf);
+  background-image: -o-linear-gradient(top, #5d5966, #b1a6bf);
+  background-image: linear-gradient(to bottom, #5d5966, #b1a6bf);
+  text-decoration: none;
+}

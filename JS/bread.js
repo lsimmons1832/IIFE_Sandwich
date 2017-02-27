@@ -27,20 +27,20 @@ var SandwichMaker = (function (oldSandwichMaker) {
 		pita: 2.00,
 		sevengrain: 2.50,
 		italian: 3.00
-	};
+	}
 
 	
-		oldSandwichMaker.getbread = function(){
-				return breadPrice;
-		},
+		// oldSandwichMaker.getbread = function(){
+		// 		return breadPrice;
+		// }
 	
-	oldSandwichMaker.getBreadPrice = function(bread){
-		return breadPrice[bread];
+	oldSandwichMaker.getBreadPrice = function(selectedTopping){
+		return breadPrice[selectedTopping];
 	}
 
 
 	return oldSandwichMaker;
-})(SandwichMaker.getBreadPrice || {});
+})(SandwichMaker || {});
 
 //console.log(SandwichMaker.cost);
 

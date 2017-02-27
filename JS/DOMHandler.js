@@ -1,17 +1,18 @@
-var SandwichMaker = (function(){
-	var sandwich = [];
-	var finalSandwichPrice = 0;
-	var selectedTopping;
-	
-})(SandwichMaker || {});
+// Variable to hold the final price. Default to 0.
+var finalSandwichPrice = 0;
 
-function buildSandwich(){
+// Variable to hold topping that the user selects
+var selectedTopping;
+
+// Variable to hold final price
 var finalPrice = document.getElementById("finalPrice");
+
+// Define button
 var button = document.getElementById("makeMySandwich");
 
 // Get a reference to the <select> element that has all the meat options
 var meatChooser = document.getElementById("meat");
-var breadChooser = document.getElementById("bread");
+var breadChooser = document.getElementsByName("bread");
 var cheeseChooser = document.getElementById("cheese");
 var condimentChooser = document.getElementById("condiments");
 var veggiesChooser = document.getElementById("veggies");
@@ -34,25 +35,20 @@ var veggiesChooser = document.getElementById("veggies");
 // 	finalSandwichPrice = SandwichMaker.getTotalPrice();
 //     finalPrice.innerHTML = finalSandwichPrice;
 // });
-for (var i = 0; i < document.getElementById('bread').length; i++) {
-	if(document.getElementById('bread')[i].checked){
-		SandwichMaker.getBreadPrice.push(bread)=sandwich[i];
-	}
-}
-console.log("My sandwich: ",sandwich[i]);
-// breadChooser.addEventListener("click", SandwichMaker) 
-// alert("I made it inside bread");
-//   // Get the value chosen from the DOM
-//   selectedTopping = event.breadChooser.value;
-//     sandwich = SandwichMaker.getBreadPrice(bread).push;
+var SandwichMaker = (function(breadPrice){
+breadChooser.addEventListener("change", SandwichMaker)
+alert("I made it inside bread");
+  // Get the value chosen from the DOM
+  selectedTopping = breadChooser.value;
+    SandwichMaker(selectedTopping);
 	
-// 	// if (event.target.checked === false){
-// 	// 	selectedTopping = event.breadChooser.value;
-// 	// 	SandwichMaker.removeBread(selectedTopping);
-// 	// }
-// 	finalSandwichPrice = SandwichMaker.getTotalPrice();
-//     finalPrice.innerHTML = finalSandwichPrice;
-
+	// if (event.target.checked === false){
+	// 	selectedTopping = event.breadChooser.value;
+	// 	SandwichMaker.removeBread(selectedTopping);
+	// }
+	finalSandwichPrice = SandwichMaker.getTotalPrice();
+    finalPrice.innerHTML = finalSandwichPrice;
+});
 
 // var SandwichMaker = (function(addDOM){
 // cheeseChooser.addEventListener("click", SandwichMaker) 
@@ -98,5 +94,5 @@ console.log("My sandwich: ",sandwich[i]);
 // 	finalSandwichPrice = SandwichMaker.getTotalPrice();
 //     finalPrice.innerHTML = finalSandwichPrice;
 // });
-}
-document.getElementById("makeMySandwich").addEventListener("click", buildSandwich);
+
+button.addEventListener("click", SandwichMaker);

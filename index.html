@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Sandwich Maker</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 	<body>
 		<h1>Sandwich Maker</h1>
@@ -9,22 +10,22 @@
 
 		<!-- Bread -->
 		<legend>Choose Your Bread</legend>
-			<fieldset>
-				<input type="checkbox" value="rye" id="bread"> 
+			<fieldset class="bread">
+				<input type="checkbox" value="rye" name="bread"> 
 				<label for="rye">Rye</label>
-				<input type="checkbox" value="sourdough" id="bread">
+				<input type="checkbox" value="sourdough" name="bread">
 				<label for="sourdough">Sourdough</label>
-				<input type="checkbox" value="pita" id="bread">
+				<input type="checkbox" value="pita" name="bread">
 				<label for="pita">Pita</label>
-				<input type="checkbox" value="sevengrain" id="bread">
+				<input type="checkbox" value="sevengrain" name="bread">
 				<label for="sevengrain">Seven Grain</label>
-				<input type="checkbox" value="italian" id="bread">
+				<input type="checkbox" value="italian" name="bread">
 				<label for="italian">Italian</label>
 			</fieldset>
 
 		<!-- Meat -->
 		<legend>Choose Your Meat</legend>
-			<fieldset>
+			<fieldset class="meat">
 				<input type="checkbox" value="ham" id="meat">
 				<label for="ham">Ham</label>
 				<input type="checkbox" value="turkey" id="meat">
@@ -47,7 +48,7 @@
 
 		<!-- Cheese -->
 		<legend>Add Cheese</legend>
-			<fieldset>
+			<fieldset class="cheese">
 				<input type="checkbox" value="swiss" id="cheese">
 				<label for="swiss">Swiss</label>
 				<input type="checkbox" value="cheedar" id="cheese">
@@ -64,7 +65,7 @@
 
 		<!-- Condiments -->
 		<legend>Add Condiments</legend>
-			<fieldset>
+			<fieldset class="condiments">
 				<input type="checkbox" value="ketchup" id="condiments">
 				<label for="ketchup">Ketchup</label>
 				<input type="checkbox" value="yellowmustard" id="condiments">
@@ -83,7 +84,7 @@
 
 		<!-- Veggies -->
 		<legend>Add Veggies</legend>
-			<fieldset>
+			<fieldset class="veggies">
 				<input type="checkbox" value="lettuce" id="veggies">
 				<label for="lettuce">Lettuce</label>
 				<input type="checkbox" value="tomato" id="veggies">
@@ -101,12 +102,12 @@
 				<input type="checkbox" value="bellpepper" id="veggies">
 				<label for="bellpepper">Bell Pepper</label>
 			</fieldset>
-			<button id="makeMySandwich">Make My Sandwich</button>
+			<button id="makeMySandwich" class="btn">Make My Sandwich</button>
 			<div id="finalPrice">Total: </div>
 
 
 
-		<script src="./JS/SandwichMaker.js"></script>
+		<script src="./JS/sandwichMaker.js"></script>
 		<script src="./JS/bread.js"></script>	
 	<!-- 	<script src="./JS/meat.js"></script> -->
 		<!-- <script src="./JS/cheese.js"></script>
