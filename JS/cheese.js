@@ -1,7 +1,7 @@
-var SandwichMaker = (function (maker) {
+var SandwichMaker = (function (oldSandwichMaker) {
 	
 	//Private array to store bread prices
-	var cheesePrices = {
+	var cheesePrice = {
 		swiss: 0.15,
 		cheedar: 0.25,
 		mozzarella: 0.10,
@@ -10,10 +10,9 @@ var SandwichMaker = (function (maker) {
 		pepperjack: 0.25
 	};
 
-	maker.addCheese = function(cheese){
-		console.log(cheesePrices[cheese])
-			return cheesePrices[cheese];
+	oldSandwichMaker.getCheesePrice = function(cheese){
+			return cheesePrice[cheese]
 		};
 	
-	return maker;
-})(SandwichMaker);
+	return oldSandwichMaker;
+})(SandwichMaker || {});

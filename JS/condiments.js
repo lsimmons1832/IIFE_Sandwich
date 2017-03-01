@@ -1,8 +1,8 @@
 // This SandwichMaker IIFE augments the original one
- var SandwichMaker = (function(maker) {
+ var SandwichMaker = (function(oldSandwichMaker) {
 
 // Private variable to store the different meat prices
-   var condimentsPrices = {
+   var condimentsPrice = {
    	ketchup: 0.25,
    	yellowmustard: 0.50,
    	spicymustard: 0.15,
@@ -12,12 +12,10 @@
    	ranch: 0.35
    };
 
-// Augment the original object with another method
-   maker.addCondiments = function() {
-   		console.log(condimentsPrices[condiments])
-     	return condimentsPrices[condiments];
-   };
+   oldSandwichMaker.getCondimentsPrice = function(condiments){
+         return condimentsPrice[condiments]
+      };
 
    // Return the new, augmented object with the new method on it
-   return maker;
- })(SandwichMaker);
+   return oldSandwichMaker;
+ })(SandwichMaker || {});
